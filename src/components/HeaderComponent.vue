@@ -4,14 +4,13 @@
            <div class="header-nav">
                <div class="logo-div">
                   <img src="@/assets/proj-images/author-logo-round-200x205.png" alt="">
+                 
 
                </div>
             <NavBarComponent />
             
         </div>
-        <div class="carousel">
-            
-        </div>
+        <CarouselComponent/>
     </header>
     <div class="pos-absolute">
         <BookShopHeaderComponent />
@@ -29,11 +28,13 @@
 <script>
 import NavBarComponent from '@/components/NavBarComponent.vue';
 import BookShopHeaderComponent from '@/components/BookShopHeaderComponent.vue';
+import CarouselComponent from '@/components/CarouselComponent.vue';
 export default {
     name:'HeaderComponent',
     components:{
         NavBarComponent,
-        BookShopHeaderComponent
+        BookShopHeaderComponent,
+        CarouselComponent
     }
 
 }
@@ -45,6 +46,7 @@ header{
     background-position: cover;
     background-repeat: no-repeat;
     background-size:100%;
+    height: 1000px;
     
     .carousel{
         height: 600px;
@@ -71,6 +73,11 @@ header{
     position: absolute;
     bottom:0px;
     left:1000px;
+}
+.carousel-navigation{
+   button{
+    padding: 20px;
+   }
 }
 
 
