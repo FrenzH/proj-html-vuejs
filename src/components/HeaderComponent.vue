@@ -1,23 +1,39 @@
 <template>
-    <header>
-        <div class="header-nav">
-            <div class="logo-div">
-                <img src="@/assets/proj-images/author-logo-round-200x205.png" alt="">
+    <div class="header-container">
+        <header>
+           <div class="header-nav">
+               <div class="logo-div">
+                  <img src="@/assets/proj-images/author-logo-round-200x205.png" alt="">
 
-            </div>
+               </div>
             <NavBarComponent />
             
         </div>
+        <div class="carousel">
+            
+        </div>
     </header>
+    <div class="pos-absolute">
+        <BookShopHeaderComponent />
+
+    </div>
+    
+    
+
+     
+    </div>
+    
   
 </template>
 
 <script>
 import NavBarComponent from '@/components/NavBarComponent.vue';
+import BookShopHeaderComponent from '@/components/BookShopHeaderComponent.vue';
 export default {
     name:'HeaderComponent',
     components:{
-        NavBarComponent
+        NavBarComponent,
+        BookShopHeaderComponent
     }
 
 }
@@ -26,10 +42,15 @@ export default {
 <style lang="scss" scoped>
 header{
     background-image: url('@/assets/proj-images/author_thumbnail.jpg') ;
-    background-position:contain;
+    background-position: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 800px;
+    background-size:100%;
+    
+    .carousel{
+        height: 600px;
+    }
+    
+    
     img{
         width: 100%;
     }
@@ -46,5 +67,13 @@ header{
         }
     }
 }
+.pos-absolute{
+    position: absolute;
+    bottom:0px;
+    left:1000px;
+}
+
+
+
 
 </style>
