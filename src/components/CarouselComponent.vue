@@ -91,7 +91,10 @@ export default {
 
 <style lang="scss" scoped>
 .carousel{
-    width: 500px;
+    width: 600px;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    color:white;
 }
 
 </style>

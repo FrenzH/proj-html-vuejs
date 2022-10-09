@@ -1,15 +1,27 @@
 <template>
-    <div></div>
+    <div class="debug">
+        <button >click</button>
+        <p>{{index}}</p>
+
+    </div>
   
 </template>
 
 <script>
 export default {
-    name:'MainComponent'
+    name:'MainComponent',
+    props:{
+        index:Number
+    }
 
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.debug{
+    height: 600px;
+    background-color: aqua;
+}
+
 
 </style>

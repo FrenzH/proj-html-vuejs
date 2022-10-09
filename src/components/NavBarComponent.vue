@@ -1,9 +1,9 @@
 <template>
     <div class="nav-bar">
         <ul>
-            <li     
-                   v-for="item in List"  
-                   :key="item">
+            <li    @click="getIndex(index)" 
+                   v-for=" (item , index) in List"  
+                   :key="index">
                                   {{item}}
             </li>
             
@@ -23,6 +23,11 @@ export default {
             List:['Home','About Me','Testimonials','My Blog','Meetups','Shop','Contact Me']
         }
 
+    },
+    methods:{
+        getIndex(index){
+            this.$emit('index',index);
+        }
     }
 
 }

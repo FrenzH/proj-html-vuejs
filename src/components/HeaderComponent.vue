@@ -1,21 +1,23 @@
 <template>
-    <div class="header-container">
-        <header>
-           <div class="header-nav">
-               <div class="logo-div">
-                  <img src="@/assets/proj-images/author-logo-round-200x205.png" alt="">
-                 
-
-               </div>
-            <NavBarComponent />
-            
+    <div>
+        <HeaderHomeComponent  v-if="index===0"/>
+        
+        <div class="nav-bar-position">
+            <NavBarComponent @index='currentIndex' />
         </div>
-        <CarouselComponent/>
-    </header>
-    <div class="pos-absolute">
-        <BookShopHeaderComponent />
+        
+        
 
-    </div>
+        
+        <div class="carousel-position" v-if="index===0">
+            <CarouselComponent />
+        </div>
+        
+    
+    
+        <div class="pos-absolute" v-if="index===0">
+            <BookShopHeaderComponent  />
+        </div>
     
     
 
@@ -29,57 +31,51 @@
 import NavBarComponent from '@/components/NavBarComponent.vue';
 import BookShopHeaderComponent from '@/components/BookShopHeaderComponent.vue';
 import CarouselComponent from '@/components/CarouselComponent.vue';
+import HeaderHomeComponent from '@/components/HeaderHomeComponent.vue';
 export default {
     name:'HeaderComponent',
+    data(){
+        return{
+            index:0
+        }
+    },
+    methods:{
+    currentIndex(index){
+        this.index=index;
+        console.log(index);
+        this.$emit('currentIndex',index)
+    }
+  },
     components:{
         NavBarComponent,
         BookShopHeaderComponent,
-        CarouselComponent
+        CarouselComponent,
+        HeaderHomeComponent
     }
 
 }
 </script>
 
 <style lang="scss" scoped>
-header{
-    background-image: url('@/assets/proj-images/author_thumbnail.jpg') ;
-    background-position: cover;
-    background-repeat: no-repeat;
-    background-size:100%;
-    height: 1000px;
-    
-    .carousel{
-        height: 600px;
-    }
-    
-    
-    img{
-        width: 100%;
-    }
-}
-.header-nav{
-    display: flex;
-    justify-content: space-between;
+.carousel-position{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
 
-    .logo-div{
-        height: 200px;
-        width:205px;
-        img{
-            width: 100%;
-        }
-    }
 }
+
+
 .pos-absolute{
     position: absolute;
     bottom:0px;
     left:1000px;
 }
-.carousel-navigation{
-   button{
-    padding: 20px;
-   }
-}
 
+.nav-bar-position{
+    position: absolute;
+    bottom: 600px;
+    left: 700px;
+}
 
 
 

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <HeaderComponent/>
-    <MainComponent/>
+    <HeaderComponent @currentIndex="currentIndex" />
+    <MainComponent :index="index"/>
     <FooterComponent />
    
   </div>
@@ -15,6 +15,19 @@ import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
   name: 'App',
+  data(){
+    return{
+      index:0
+    }
+  },
+  methods:{
+    currentIndex(index){
+      this.index=index;
+      console.log('ciao',index)
+    }
+  },
+  
+  
   components: {
     HeaderComponent,
     MainComponent,
