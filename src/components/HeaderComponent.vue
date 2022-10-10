@@ -45,15 +45,13 @@ import HeaderShopComponent from '@/components/HeaderShopComponent.vue';
 import HeaderContactMeComponent from '@/components/HeaderContactMeComponent.vue';
 export default {
     name:'HeaderComponent',
-    data(){
-        return{
-            index:0
-        }
+  
+    props:{
+        index:Number
+
     },
     methods:{
     currentIndex(index){
-        this.index=index;
-        console.log(index);
         this.$emit('currentIndex',index)
     }
   },

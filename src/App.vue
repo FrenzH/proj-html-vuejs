@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <HeaderComponent @currentIndex="currentIndex" />
-    <MainComponent :index="index"/>
+    <HeaderComponent :index="index" @currentIndex="currentIndex" />
+    <MainComponent :index="index" @currentIndex="changeIndex"/>
     <FooterComponent />
    
   </div>
@@ -24,6 +24,9 @@ export default {
     currentIndex(index){
       this.index=index;
       console.log('ciao',index)
+    },
+    changeIndex(index){
+      this.index=index;
     }
   },
   
