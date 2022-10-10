@@ -5,6 +5,8 @@
         <AudibleComponent/>
         <TestimonialComponent @index="getIndex"/>
         <UpcomingEventsComponent />
+        <SubscribeComponent/>
+        <FindOutMore/>
         
 
 
@@ -19,6 +21,8 @@ import ShopBannerComponent from '@/components/ShopBannerComponent.vue';
 import AudibleComponent from '@/components/AudibleComponent.vue';
 import TestimonialComponent from '@/components/TestimonialComponent.vue';
 import UpcomingEventsComponent from '@/components/UpcomingEventsComponent.vue';
+import SubscribeComponent from '@/components/SubscribeComponent.vue';
+import FindOutMore from '@/components/FindOutMoreComponent.vue';
 
 export default {
     name:'MainComponent',
@@ -36,7 +40,9 @@ export default {
     ShopBannerComponent,
     AudibleComponent,
     TestimonialComponent,
-    UpcomingEventsComponent
+    UpcomingEventsComponent,
+    SubscribeComponent,
+    FindOutMore
 }
 
 }
