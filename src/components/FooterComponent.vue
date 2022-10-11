@@ -22,11 +22,11 @@
             </div>
             <div>
                 <h1>CONTACT INFO</h1>
-                <h2>63 E. Studebaker Street Bolingbrook, IL 60440</h2>
-                <h2>Phone: (800) 000-0000</h2>
-                <h2>Mobile: (800) 000-0000</h2>
-                <h2>Email: <span>info@your-company.com</span></h2>
-                <div>
+                <p>63 E. Studebaker Street Bolingbrook, IL 60440</p>
+                <p>Phone: (800) 000-0000</p>
+                <p>Mobile: (800) 000-0000</p>
+                <p>Email: <span>info@your-company.com</span></p>
+                <div class="icon-container">
                     <font-awesome-icon icon="fa-brands fa-facebook" />
                     <font-awesome-icon icon="fa-brands fa-twitter" />
                     <font-awesome-icon icon="fa-brands fa-instagram" />
@@ -48,6 +48,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/scss/variables.scss" ;
 .container{
     color: white;
     display: flex;
@@ -66,12 +67,47 @@ export default {
     }
 ul{
     list-style: none;
+    margin-top: 20px;
 }
 a{
     text-decoration: none;
+    color: $color3;
 }
 .footer-description{
+    flex-grow: 1;
     display: flex;
+    justify-content: center;
+    gap:50px;
+}
+.footer-description div{
+    width: 30%;
+    margin-top: 90px;
+}
+p{
+    max-width: 400px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.icon-container{
+    margin: 0 !important;
+   
+}
+svg{
+    padding: 4px;
+    cursor: pointer;
+}
+h1{
+    font-size: 1.2rem;
+}
+p{
+    color: $color3;
+
+}
+li{
+    padding-top: 10px;
+}
+ul svg{
+    color: white;
 }
 
 </style>
