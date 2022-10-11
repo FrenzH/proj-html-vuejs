@@ -19,5 +19,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/scss/variables.scss" ;
+.paragraph{
+  width: 400px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+.image{
+  cursor: pointer;
+}
+h1{
+  padding-bottom: 15px;
+}
+p{
+  padding-top:15px;
+  line-height: 30px;
+  font-size: 1.2rem;
+}
+h1:hover{
+  color: $color1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.image:hover{
+  transition: 0.5s;
+  opacity: 70%;
+}
 
 </style>
