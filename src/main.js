@@ -4,11 +4,11 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
 import {far} from '@fortawesome/free-regular-svg-icons';
-import { faAmazon,faApple,faAudible} from '@fortawesome/free-brands-svg-icons'
+import { faAmazon,faApple,faAudible,faFacebook,faInstagram,faYoutube,faLinkedin,faTwitter} from '@fortawesome/free-brands-svg-icons'
 
 library.add(fas);
 library.add(far);
-library.add(faAmazon,faApple,faAudible);
+library.add(faAmazon,faApple,faAudible,faFacebook,faInstagram,faYoutube,faLinkedin,faTwitter);
 Vue.component('font-awesome-icon',FontAwesomeIcon);
 
 Vue.config.productionTip = false
