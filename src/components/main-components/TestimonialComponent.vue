@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import TestimonialCard1 from '@/components/TestimonialCard1Component.vue';
-import TestimonialCard2 from '@/components/TestimonialCard2Component.vue';
+import TestimonialCard1 from '@/components/utils/TestimonialCard1Component.vue';
+import TestimonialCard2 from '@/components/utils/TestimonialCard2Component.vue';
 export default {
     name:'TestimonialComponent',
     methods:{

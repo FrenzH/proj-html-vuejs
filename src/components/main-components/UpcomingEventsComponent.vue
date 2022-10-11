@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import ChicagoBookCard from '@/components/ChicagoBookCardComponent.vue';
-import MeetAmandaCard from '@/components/MeetAmandaCardComponent.vue';
-import OpenBookCard from '@/components/OpenBookCardComponent.vue';
+import ChicagoBookCard from '@/components/utils/ChicagoBookCardComponent.vue';
+import MeetAmandaCard from '@/components/utils/MeetAmandaCardComponent.vue';
+import OpenBookCard from '@/components/utils/OpenBookCardComponent.vue';
 export default {
     name:'UpcomingEventsComponent',
     components:{

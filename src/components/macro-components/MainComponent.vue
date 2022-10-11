@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import MoreAboutComponent from '@/components/MoreAboutComponent.vue';
-import ShopBannerComponent from '@/components/ShopBannerComponent.vue';
-import AudibleComponent from '@/components/AudibleComponent.vue';
-import TestimonialComponent from '@/components/TestimonialComponent.vue';
-import UpcomingEventsComponent from '@/components/UpcomingEventsComponent.vue';
-import SubscribeComponent from '@/components/SubscribeComponent.vue';
-import FindOutMore from '@/components/FindOutMoreComponent.vue';
+import MoreAboutComponent from '@/components/main-components/MoreAboutComponent.vue';
+import ShopBannerComponent from '@/components/main-components/ShopBannerComponent.vue';
+import AudibleComponent from '@/components/main-components/AudibleComponent.vue';
+import TestimonialComponent from '@/components/main-components/TestimonialComponent.vue';
+import UpcomingEventsComponent from '@/components/main-components/UpcomingEventsComponent.vue';
+import SubscribeComponent from '@/components/main-components/SubscribeComponent.vue';
+import FindOutMore from '@/components/main-components/FindOutMoreComponent.vue';
 
 export default {
     name:'MainComponent',

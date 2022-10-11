@@ -33,16 +33,16 @@
 </template>
 
 <script>
-import NavBarComponent from '@/components/NavBarComponent.vue';
-import BookShopHeaderComponent from '@/components/BookShopHeaderComponent.vue';
-import CarouselComponent from '@/components/CarouselComponent.vue';
-import HeaderHomeComponent from '@/components/HeaderHomeComponent.vue';
-import HeaderAboutMeComponent from '@/components/HeaderAboutMeComponent.vue';
-import HeaderTestimonialsComponent from '@/components/HeaderTestimonialsComponent.vue';
-import HeaderBlogComponent from '@/components/HeaderBlogComponent.vue';
-import HeaderMeetupsComponent from '@/components/HeaderMeetupsComponent.vue';
-import HeaderShopComponent from '@/components/HeaderShopComponent.vue';
-import HeaderContactMeComponent from '@/components/HeaderContactMeComponent.vue';
+import NavBarComponent from '@/components/utils/NavBarComponent.vue';
+import BookShopHeaderComponent from '@/components/utils/BookShopHeaderComponent.vue';
+import CarouselComponent from '@/components/utils/CarouselComponent.vue';
+import HeaderHomeComponent from '@/components/headers-components/HeaderHomeComponent.vue';
+import HeaderAboutMeComponent from '@/components/headers-components/HeaderAboutMeComponent.vue';
+import HeaderTestimonialsComponent from '@/components/headers-components/HeaderTestimonialsComponent.vue';
+import HeaderBlogComponent from '@/components/headers-components/HeaderBlogComponent.vue';
+import HeaderMeetupsComponent from '@/components/headers-components/HeaderMeetupsComponent.vue';
+import HeaderShopComponent from '@/components/headers-components/HeaderShopComponent.vue';
+import HeaderContactMeComponent from '@/components/headers-components/HeaderContactMeComponent.vue';
 export default {
     name:'HeaderComponent',
     

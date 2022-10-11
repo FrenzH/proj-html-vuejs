@@ -22,7 +22,7 @@
 
 <script>
 
-import BookShopButtonComponent from '@/components/BookShopButtonComponent.vue';
+import BookShopButtonComponent from '@/components/utils/BookShopButtonComponent.vue';
 export default {
     name:'BookShopHeaderComponent',
     components:{
