@@ -1,10 +1,10 @@
 <template>
    <div class="carousel">
-    <h1>DAMON VAUGHN</h1>
+    <h1 id="author">DAMON VAUGHN</h1>
             <div class="carousel-comments">
                 <h1>{{comments[activeIndex].title}}</h1>
                 <p>{{ comments[activeIndex].text }}</p>
-                <h3>{{comments[activeIndex].author}}</h3>
+                <h3>- {{comments[activeIndex].author}}</h3>
             </div>
             <div class="carousel-navigation">
                   <button @click="onPrevClick" id="left-arrow"><font-awesome-icon :icon="['fas', 'fa-arrow-left']"/></button>
@@ -90,11 +90,42 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@import "@/assets/scss/variables.scss" ;
 .carousel{
     width: 600px;
     font-size: 1.5rem;
     margin-left: 50px;
     color:white;
+    #author{
+        font-size: 5rem;
+        font-family: 'Kristi', cursive;
+        color: $color1;
+        padding-bottom: 20px;
+    } 
+}
+h3{
+    color: $color3;
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+p{
+    padding-top: 20px;
+}
+button{
+    background-color: white;
+    opacity: 10%;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+button:hover{
+    opacity: 70%;
+}
+.carousel-navigation{
+    text-align: center;
+    margin-top: 20px;
 }
 
 </style>

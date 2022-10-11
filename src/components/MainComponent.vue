@@ -1,5 +1,5 @@
 <template>
-    <div v-if="index===0">
+    <div v-if="currentIndex===0">
         <MoreAboutComponent @index="getIndex"/>
         <ShopBannerComponent/>
         <AudibleComponent/>
@@ -27,11 +27,11 @@ import FindOutMore from '@/components/FindOutMoreComponent.vue';
 export default {
     name:'MainComponent',
     props:{
-        index:Number
+        currentIndex:Number
     },
     methods:{
         getIndex(index){
-            this.$emit('currentIndex',index)
+            this.$emit('index',index)
            
         }
     },

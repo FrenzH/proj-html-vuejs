@@ -38,7 +38,7 @@ export default {
 .container{
     
     display: flex;
-    padding: 30px;
+    padding: 50px;
     img{
         width: 100%;
     }

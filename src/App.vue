@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <HeaderComponent :index="index" @currentIndex="currentIndex" />
-    <MainComponent :index="index" @currentIndex="changeIndex"/>
+    <HeaderComponent :currentIndex="currentIndex" @index="changeIndex" />
+    <MainComponent :currentIndex="currentIndex" @index="changeIndex"/>
     <FooterComponent />
    
   </div>
@@ -17,18 +17,18 @@ export default {
   name: 'App',
   data(){
     return{
-      index:0
+      currentIndex:0
     }
   },
   methods:{
-    currentIndex(index){
-      this.index=index;
-      console.log('ciao',index)
-    },
+    
     changeIndex(index){
-      this.index=index;
+      console.log('ciao sono',index)
+      this.currentIndex=index;
+      console.log(this.currentIndex)
     }
   },
+ 
   
   
   components: {
@@ -41,9 +41,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 </style>

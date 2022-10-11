@@ -40,10 +40,10 @@ img{
     }
 }
 header{
-    background-image: url('@/assets/proj-images/author_thumbnail.jpg') ;
-    background-position: cover;
+    background-image: url('@/assets/proj-images/footer-3.jpg') ;
+    background-position: center ;
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
     height: 100vh;
     
    

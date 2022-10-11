@@ -1,26 +1,26 @@
 <template>
     <div>
-        <HeaderHomeComponent  v-if="index===0"/>
-        <HeaderAboutMeComponent v-if="index===1"/>
-        <HeaderTestimonialsComponent v-if="index===2"/>
-        <HeaderBlogComponent v-if="index===3"/>
-        <HeaderMeetupsComponent v-if="index===4"/>
-        <HeaderShopComponent v-if="index===5"/>
-        <HeaderContactMeComponent v-if="index===6"/>       
+        <HeaderHomeComponent  v-if="currentIndex===0"/>
+        <HeaderAboutMeComponent v-if="currentIndex===1"/>
+        <HeaderTestimonialsComponent v-if="currentIndex===2"/>
+        <HeaderBlogComponent v-if="currentIndex===3"/>
+        <HeaderMeetupsComponent v-if="currentIndex===4"/>
+        <HeaderShopComponent v-if="currentIndex===5"/>
+        <HeaderContactMeComponent v-if="currentIndex===6"/>       
         <div class="nav-bar-position">
-            <NavBarComponent @index='currentIndex' />
+            <NavBarComponent :currentIndex="currentIndex" @index='changedIndex' />
         </div>
         
         
 
         
-        <div class="carousel-position" v-if="index===0">
+        <div class="carousel-position" v-if="currentIndex===0">
             <CarouselComponent />
         </div>
         
     
     
-        <div class="pos-absolute" v-if="index===0">
+        <div class="pos-absolute" v-if="currentIndex===0">
             <BookShopHeaderComponent  />
         </div>
     
@@ -45,14 +45,16 @@ import HeaderShopComponent from '@/components/HeaderShopComponent.vue';
 import HeaderContactMeComponent from '@/components/HeaderContactMeComponent.vue';
 export default {
     name:'HeaderComponent',
-  
+    
     props:{
-        index:Number
+        currentIndex:Number
 
     },
     methods:{
-    currentIndex(index){
-        this.$emit('currentIndex',index)
+    changedIndex(index){
+        
+        console.log('ehi',this.currentIndex);
+        this.$emit('index',index)
     }
   },
     components:{
@@ -88,8 +90,8 @@ export default {
 
 .nav-bar-position{
     position: absolute;
-    bottom: 600px;
-    left: 700px;
+    bottom: 650px;
+    left: 800px;
 }
 
 
