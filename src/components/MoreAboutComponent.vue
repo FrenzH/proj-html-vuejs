@@ -22,20 +22,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@import "@/assets/scss/variables.scss" ;
 .more-about-container{
     text-align: center;
     margin-top: 150px;
     margin-bottom: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
    h1{
     padding-bottom: 40px;
+    font-family: 'Kristi',cursive;
+    color: $color1;
+    font-size: 5.5rem;
    }
    
 }
-#Meet-Button{
-    padding: 10px;
-    border-radius: 12px;
+button{
+    border: none;
+    background-color: $color4;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+  
+    border-radius: 10px;
+
+    
+}
+button:hover{
+    background-color: $color5;
+    
 }
 p{
     padding-bottom: 40px;
+    font-size: 2.5rem;
+    line-height: 60px;
    }
 </style>

@@ -1,16 +1,31 @@
 <template>
   <div class="container">
     <div class="banner-logo">
-        <img src="@/assets/proj-images/ebay-logotan-2x-200x66.png" alt="">
+        <a href="">
+            <img src="@/assets/proj-images/ebay-logotan-2x-200x66.png" alt="">
+        </a>
+        
     </div>
     <div class="banner-logo">
-        <img src="@/assets/proj-images/audible-logotan-2x-200x66.png" alt="">
+        <a href="">
+            <img src="@/assets/proj-images/audible-logotan-2x-200x66.png" alt="">
+
+        </a>
+        
     </div>
     <div class="banner-logo">
-        <img src="@/assets/proj-images/bb-logotan-2x-200x66.png" alt="">
+        <a href="">
+            <img src="@/assets/proj-images/bb-logotan-2x-200x66.png" alt="">
+
+        </a>
+        
     </div>
     <div class="banner-logo">
-        <img src="@/assets/proj-images/kindlefire-logotan-2x-200x66.png" alt="">
+        <a href="">
+            <img src="@/assets/proj-images/kindlefire-logotan-2x-200x66.png" alt="">
+
+        </a>
+        
     </div>
 
   </div>
@@ -29,10 +44,13 @@ export default {
     background-color: $color2;
     display: flex;
     justify-content: center;
+    padding: 60px;
 }
-.banner-log{
+.banner-logo{
     width: 200px;
     height: 66px;
+    margin:0 30px;
+    cursor: pointer;
 }
 
 

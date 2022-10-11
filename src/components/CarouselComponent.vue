@@ -114,7 +114,7 @@ p{
 }
 button{
     background-color: white;
-    opacity: 10%;
+    opacity: 40%;
     color: black;
     padding: 10px;
     cursor: pointer;
